@@ -2,7 +2,7 @@ Getting and cleaning data - course project
 ==========================================
 
 First of all I would like to thank David Hood for his excellent [FAQ thread][1] that guided and inspired my reasoning process.
-1: https://class.coursera.org/getdata-007/forum/thread?thread_id=49
+[1]: https://class.coursera.org/getdata-007/forum/thread?thread_id=49
 
 ##Initial settings:
 We will make use of the dplyr library functions (chain,select,etc) so you need to install that package if you still don't have it in order to be able to run the code
