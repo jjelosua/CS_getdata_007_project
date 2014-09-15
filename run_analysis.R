@@ -16,9 +16,11 @@ measurements_train <- read.table("UCI HAR Dataset/train/X_train.txt",header = FA
 
 # Let's name the variables of our measurements dataset prior to any data manipulation
 # that can change the order of our variables
+#Clean double body labels in the original measurement names.
+clean_measurements_labels <- gsub("BodyBody","Body",measurements_labels$label)
 # apply this new labels to the columns of our test and train measurements data sets
-names(measurements_test) <- measurements_labels$label
-names(measurements_train) <- measurements_labels$label
+names(measurements_test) <- clean_measurements_labels
+names(measurements_train) <- clean_measurements_labels
 
 # Now that we have the names assigned to the measurements 
 # we can safely combine the different parts of each dataset
